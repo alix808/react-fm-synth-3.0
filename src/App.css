@@ -1,0 +1,104 @@
+:root {
+  --dark: #252423;
+  --light: #444342;
+  --blue: #7efbec;
+}
+
+body {
+  background-color: var(--dark);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  width: 1024px;
+  height: 200px;
+  border-radius: 4px;
+  border: 1px solid var(--light);
+  background-color: var(--dark);
+}
+
+section {
+  width: 1024px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0px;
+}
+
+@media (max-width: 414px) {
+  canvas,
+  section {
+    width: 378px;
+  }
+}
+@media (max-width: 375px) {
+  canvas,
+  section {
+    width: 343px;
+  }
+}
+
+button {
+  width: 106px;
+  height: 36px;
+  background-color: var(--dark);
+  border: 1px solid var(--light);
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  outline: 0 none;
+  margin: 12px 0px;
+}
+
+i {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 36px;
+  color: var(--light);
+  cursor: pointer;
+}
+
+input {
+  margin: 12px 0px;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  background: var(--light);
+  height: 1px;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid var(--blue);
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: var(--dark);
+  cursor: pointer;
+}
+
+input[type='range']::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: 1px solid var(--blue);
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: var(--dark);
+  cursor: pointer;
+}
